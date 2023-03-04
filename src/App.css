@@ -1,38 +1,83 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400&family=Poppins:wght@400;600&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(219, 230, 253);
+}
+
+
+h1 {
+  font-size: 3.2rem;
+  margin: 2rem 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.screen{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  min-width: 20rem;
+  width: 40vw;
+  padding: 4rem;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+  color: #15133c;
+  text-align:center;
+  font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.math{
+  font-size:40rem;
+}
+
+.buttons{
+display:flex;
+margin:2rem auto;
+padding:3rem;
+justify-content: space-between;
+
+}
+.buttons>button{
+  padding:1rem;
+}
+
+/* responsive layout */
+
+@media (max-width: 998px) {
+  html {
+    font-size: 56%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    min-width: 45rem;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 51%;
+  }
+
+  .container {
+    min-width: 35rem;
+    padding: 2rem;
   }
 }
